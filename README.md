@@ -20,10 +20,20 @@ Then install the skill using the [agent instructions below](#use-with-an-ai-agen
 read-only. Creating copies and running the official Paxel pipeline are separate
 steps; the latter can upload information and requires explicit approval.
 
-**Status:** v0.1.0 publication candidate. Repository URLs below identify the planned
-public destination and become usable after publication. Until then, install from
-this local checkout using the instructions below. The official Paxel Docker/report/
-upload path has not been executed under this adapter.
+## Continue with YC Paxel
+
+[YC Paxel](https://paxel.ycombinator.com/) analyzes coding-agent sessions and produces
+a builder profile. This unofficial skill helps diagnose missing Codex/Antigravity
+sessions and prepare recovery; YC Paxel still handles the external analysis and report.
+
+**New to Paxel?** Start at the official site for account setup and its current
+instructions. **Recovering missing sessions?** Follow our
+[step-by-step Paxel handoff](docs/continue-with-paxel.md): get an installer without
+running it, check compatibility, prepare sessions, approve the generated runner,
+capture a private log, and check your results. Diagnosis alone needs no Paxel run.
+
+**Status:** v0.1.0, public source. The official Paxel Docker/report/upload path has
+not been executed under this adapter; integration remains experimental.
 
 ## Install the CLI
 
@@ -39,7 +49,7 @@ python3 -m venv ~/.venvs/paxel-workspace
 ~/.venvs/paxel-workspace/bin/paxel-workspace --help
 ```
 
-For a local checkout before publication:
+For a local checkout:
 
 ```sh
 pipx install .
