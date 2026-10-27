@@ -31,7 +31,13 @@ Do not generate ad hoc transcript parsers or patch unknown installers.
    prepared-only collection, no other agents, no source repo/Git metrics mounting.
    Unknown or mixed workspace attribution stays excluded; never fabricate remotes
    or rewrite Codex metadata to inflate counts.
-6. **Do not execute the runner without explicit upload approval.** Explain that
+6. Give the user a clear next-step handoff using
+   [Continue with YC Paxel](docs/continue-with-paxel.md). Include the official
+   https://paxel.ycombinator.com/ link, Docker/account prerequisites, the actual
+   private runner/log paths, and how to return to Paxel for results. If no installer
+   is available, guide them to obtain it without executing it. Never claim a new
+   upstream installer is supported before the CLI fingerprint check.
+   **Do not execute the runner without explicit upload approval.** Explain that
    official Paxel may upload metadata, paths and aggregate analysis and may replay
    prior pending uploads. After approval, show the generated runner command with
    `PAXEL_WORKSPACE_ALLOW_UPLOAD=YES`. There is no CLI command that runs it automatically.
