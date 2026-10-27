@@ -1,0 +1,22 @@
+name: Paxel compatibility
+description: Request support for an unrecognized installer snapshot.
+body:
+  - type: markdown
+    attributes:
+      value: Do not attach installers, raw transcripts, credentials, private source code, or unredacted logs. Installers can contain account-specific credentials. Never bypass fingerprint checks.
+  - type: input
+    id: fingerprint
+    attributes:
+      label: Installer SHA-256
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Public official download location, without tokens or personal query parameters
+  - type: textarea
+    id: capabilities
+    attributes:
+      label: Sanitized compatibility result and tool version
+    validations:
+      required: true

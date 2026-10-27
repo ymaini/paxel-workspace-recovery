@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "workspace": "<workspace>",
+  "repository_count": 0,
+  "counts": {
+    "codex": {
+      "discovered": 1,
+      "matched": 1,
+      "eligible": 1,
+      "excluded": 0,
+      "unknown": 0,
+      "ambiguous": 0,
+      "duplicates": 0,
+      "compressed": 0
+    },
+    "antigravity": {
+      "discovered": 0,
+      "matched": 0,
+      "eligible": 0,
+      "excluded": 0,
+      "unknown": 0,
+      "ambiguous": 0,
+      "duplicates": 0,
+      "compressed": 0
+    }
+  },
+  "findings": {
+    "MISSING_RECORDED_REMOTE": 1,
+    "PARENT_WORKSPACE_SESSIONS": 1
+  },
+  "sessions": [
+    {
+      "session_id": "95dd9589377f65b6a0da",
+      "agent": "codex",
+      "source": "539543961bf10975481d",
+      "source_format": "jsonl",
+      "valid": true,
+      "duplicate": false,
+      "issues": [],
+      "included": true,
+      "matched": true,
+      "attribution": "EXACT_WORKSPACE_MATCH",
+      "confidence": "high",
+      "reason": "Recorded working directory matches selected workspace",
+      "worktree": false
+    }
+  ],
+  "pipeline": {
+    "extracted": null,
+    "parsed": null,
+    "analyzable": null,
+    "too_short": null,
+    "summarized": null,
+    "scored": null,
+    "uploaded": null
+  }
+}

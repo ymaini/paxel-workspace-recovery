@@ -1,0 +1,7 @@
+include SKILL.md LICENSE README.md CONTRIBUTING.md CHANGELOG.md SECURITY.md
+include docs/architecture.md docs/how-it-works.md docs/json-schema.md
+include docs/security.md docs/third-party.md docs/troubleshooting.md docs/compatibility.md
+recursive-include references *.md
+recursive-include examples *.json
+recursive-include tests *.py
+recursive-include scripts *.py

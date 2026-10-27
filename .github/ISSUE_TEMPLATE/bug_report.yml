@@ -1,0 +1,29 @@
+name: Bug report
+description: Report incorrect behavior using sanitized evidence only.
+body:
+  - type: markdown
+    attributes:
+      value: Do not upload raw coding-agent transcripts, credentials, private source code, databases, sidecars, or unredacted logs. For security issues, read SECURITY.md first.
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Tool version, Python version, operating system
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction using synthetic data
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Reviewed, sanitized diagnostic output
+      description: Keep paths and content private. Hashes are pseudonyms; review before sharing.

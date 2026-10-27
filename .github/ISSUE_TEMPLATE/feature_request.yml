@@ -1,0 +1,16 @@
+name: Feature request
+description: Suggest a focused improvement.
+body:
+  - type: markdown
+    attributes:
+      value: Do not upload raw coding-agent transcripts, credentials, private source code, or unredacted logs.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and proposed outcome
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Scope and privacy considerations
